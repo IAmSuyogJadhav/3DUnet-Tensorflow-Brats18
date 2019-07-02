@@ -272,7 +272,8 @@ def BatchNorm3d(inputs, axis=None, training=None, momentum=0.9, epsilon=1e-5,
     if training is None:
         training = ctx.is_training
     training = bool(training)
-    TF_version = get_tf_version_number()
+    TF_version = get_tf_version_tuple()
+    TF_version = float(f"{TF_version[0]}.{TF_version[1]}")
     if not training and ctx.is_training:
         assert TF_version >= 1.4, \
             "Fine tuning a BatchNorm model with fixed statistics is only " \
