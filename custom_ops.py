@@ -15,7 +15,7 @@ import functools
 from tensorpack.utils import logger
 from tensorpack.utils.argtools import get_data_format
 from tensorpack.tfutils.tower import get_current_tower_context
-from tensorpack.tfutils.common import get_tf_version_number
+from tensorpack.tfutils.common import get_tf_version_tuple
 from tensorpack.tfutils.collection import backup_collection, restore_collection
 from tensorpack import layer_register, VariableHolder
 from tensorpack.tfutils.varreplace import custom_getter_scope
