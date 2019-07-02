@@ -13,7 +13,7 @@ from tensorpack import *
 from tensorpack.tfutils.summary import add_moving_summary
 from tensorpack.tfutils.scope_utils import under_name_scope
 from tensorpack.tfutils import optimizer
-from tensorpack.tfutils.common import get_tf_version_number
+# from tensorpack.tfutils.common import get_tf_version_number
 import tensorpack.utils.viz as tpviz
 from tensorpack.utils.gpu import get_nr_gpu
 import config
