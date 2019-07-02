@@ -5,7 +5,7 @@ import argparse
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data', help='training data path', default="/data/dataset/BRATS2018/training/")
+    parser.add_argument('--data', help='training data path', default="./data/")
     parser.add_argument('--out', help="output path", default="./5fold")
     parser.add_argument('--fraction', help="precentage of validation data", default=10)
     args = parser.parse_args()
