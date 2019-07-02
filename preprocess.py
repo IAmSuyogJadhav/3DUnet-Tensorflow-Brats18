@@ -17,7 +17,7 @@ def N4BiasFieldCorrect(filename, output_filename):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data', help='training data path', default="/data/dataset/BRATS2018/training/")
+    parser.add_argument('--data', help='training data path', default="./data/")
     parser.add_argument('--out', help="output path", default="./N4_Normalized")
     parser.add_argument('--mode', help="output path", default="training")
     args = parser.parse_args()
